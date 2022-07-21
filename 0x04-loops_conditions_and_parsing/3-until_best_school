@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# A script that uses a until loop to display best school 10 times
+x=1
+until [ $x -gt 10 ]; do
+    echo "Best school"
+    x=$((x+1))
+done
