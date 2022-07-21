@@ -22,3 +22,13 @@ Bash script that parses an apache log file and displays the ip and http code for
 
 |`5-4_bad_luck_8_is_your_chance`| a Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
 | 
+
+|`6-superstitious_numbers`|  Bash script that displays numbers from 1 to 20 and:| 
+|`7-clock`|   a Bash script that displays the time for 12 hours and 59 minutes:| 
+|`8-for_ls`|  Bash script that displays he content of the current directory
+In a list format| 
+
+|`9-to_file_or_not_to_file`|  a Bash script that gives you information about the school file.| 
+
+|`10-fizzbuzz`|  Bash script that displays numbers from 1 to 100| 
+|`6-superstitious_numbers`|  Bash script that displays numbers from 1 to 20 and:| 
