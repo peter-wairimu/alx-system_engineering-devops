@@ -28,4 +28,3 @@ They are software interrupts, they provide a way for the user or a process to di
 
 |`7-OMG_WHY_ARE_YOU_SHOUTING.rb`| Ruby script regular expression must be only matching: capital letters |
 
-
