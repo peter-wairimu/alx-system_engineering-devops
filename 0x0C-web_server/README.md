@@ -6,4 +6,4 @@
 | -------- | ----------- |
 
 | `0-transfer_file` |  a Bash script that transfers a file from our client to a server:|
-| `1-create_ssh_key_pair` |Bash script that creates an RSA key pair.|
+| `1-install_nginx_web_server` |Web servers are the piece of software generating and serving HTML pages, let’s install one!|
