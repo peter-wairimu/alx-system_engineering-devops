@@ -4,4 +4,5 @@
 | Filename | Description |
 | -------- | ----------- |
 
-| `0-give_me_a_page` |  a Bash script that transfers a file from our client to a server:|
+| `0-custom_http_response_header` |  configures a brand new Ubuntu machine to the requirements asked in this tas:|
+| `0-custom_http_response_header` |  install and configure HAproxy on your lb-01 server.:|
