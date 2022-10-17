@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Getting data from an api
+"""
 import requests
 import sys
 
