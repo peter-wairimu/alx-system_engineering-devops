@@ -3,25 +3,18 @@
 Getting data from an api
 """
 import requests
-import sys
+from sys import argv
 
-
-if __name__ == "__main__":
-    url = 'https://jsonplaceholder.typicode.com/'
-
-    user = '{}users/{}'.format(url, sys.argv[1])
-    res = requests.get(user)
-    json_o = res.json()
-    print("Employee {} is done with tasks".format(json_o.get('name')), end="")
-
-    todos = '{}todos?userId={}'.format(url, sys.argv[1])
-    res = requests.get(todos)
-    tasks = res.json()
-    l_task = []
-    for task in tasks:
+if __name__ == '__main__':
+    userId = argv[1]
+    user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
+                        format(userId), verify=False).json()
+    todo = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
+                        format(userId), verify=False).json()
+    completed_tasks = []
+    for task in todo:
         if task.get('completed') is True:
-            l_task.append(task)
-
-    print("({}/{}):".format(len(l_task), len(tasks)))
-    for task in l_task:
-        print("\t {}".format(task.get("title")))
+            completed_tasks.append(task.get('title'))
+    print("Employee {} is done with tasks({}/{}):".
+          format(user.get('name'), len(completed_tasks), len(todo)))
+    print("\n".join("\t {}".format(task) for task in completed_tasks))
